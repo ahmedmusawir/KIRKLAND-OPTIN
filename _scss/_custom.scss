@@ -1,0 +1,215 @@
+$kirkland-primary: #faa720; //Golden Rod
+$kirkland-secondary: #4d4d4d; //Dark Slate Gray
+$kirkland-third: #289c95; //Light Sea Green
+
+@import "bourbon/bourbon";
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css);
+// @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300,200,100);
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700');
+
+html { 
+ 
+	// display: none;
+}
+
+body {
+
+	h1 {
+		font-family: "Oswald", sans-serif;
+	}
+	h2,h3,h4,h5 {
+		font-family: "Raleway", sans-serif;
+	}
+}
+
+#HEADER-LOGO {
+	img {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	.orange-bar {
+		min-height: 1.5rem;
+		background: $kirkland-primary;
+	}
+}
+
+#BLOCK1 {
+	min-height: 650px;
+	background: $kirkland-secondary;
+	color: $snow;
+
+	.left-pane {
+		h1 {
+			padding-top: 3rem;
+			padding-bottom: 1rem;
+		}
+		h4 {
+			font-weight: 500;
+			line-height: 2.5rem;
+			padding-bottom: 2rem;
+		}
+		ul {
+			padding-bottom: 5rem;
+			margin-bottom: 8rem;
+			list-style: none;
+
+			li {
+				font-size: 1.8rem;
+				font-weight: 300;
+				margin-bottom: 2rem;
+
+				i {
+					font-size: 2.5rem;
+					color: darken($kirkland-primary, 0%)
+				}
+			}
+		}
+
+		@media (min-width: 700px) {
+			h1 {
+				padding-top: 5rem;
+				padding-bottom: 2rem;
+				font-size: 4.5rem;
+			}
+			h4 {
+				font-size: 2.8rem;
+				font-weight: 400;
+				line-height: 3.5rem;
+				padding-bottom: 3rem;
+			}
+			ul {
+				padding-bottom: 5rem;
+				padding: 0 !important;
+				list-style: none;
+
+				li {
+					font-size: 2rem;
+					font-weight: 300;
+					margin-bottom: 2rem;
+
+					i {
+						font-size: 2.5rem;
+						color: darken($kirkland-primary, 0%)
+					}
+				}
+			}		
+		}		
+	}
+
+	.right-pane {
+		background: darken($kirkland-secondary, 10%);
+		// min-height: 650px;
+		padding: 0;
+		margin: 0;
+
+		img {
+			margin-top: -50px;
+		}
+		
+		.the-form {
+			button {
+				font-size: 2rem;
+				font-weight: 500;
+				width: 90%;
+				padding: 2rem;
+				margin-left: 1rem;
+				margin-right: 1rem;
+
+				@media (max-width: 413px) {
+					font-size: 1.5rem;
+				}
+			}
+			input {
+				width: 90%;
+				margin: 0 auto;
+				border-radius: 5px;
+				padding: 2rem;
+			}			
+		}
+
+		.secure-text {
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+			color: lighten($gray-light, 10%);
+		}
+	}
+}
+
+#BLOCK2 {
+
+	h1 {
+		font-size: 4rem;
+		font-weight: 300;
+		padding-top: 3rem;
+		padding-bottom: 2rem;
+		border-bottom: 2px solid $kirkland-secondary;
+		text-align: center;
+	}
+	img {
+		margin-right: 5rem;
+		margin-bottom: 3rem;
+
+		@media (max-width: 500px ) {
+			width: 100%;
+		}
+
+	}
+	.text-content {
+
+		h3 {
+			font-weight: 700;
+			font-size: 2.5rem;
+		}
+		p {
+			font-size: 2.2rem;
+			font-weight: 400;
+			line-height: 3rem;
+			color: gray;
+		}		
+	}
+	
+}
+
+#SITE-FOOTER {
+	margin-top: 3rem;
+	padding: 5rem;
+	background: darken($steel, 10%);
+	nav {
+		li {
+			list-style: none;
+			display: inline-block;
+			font-size: 2rem;
+			padding-right: 1rem;
+		}
+	}
+	.copyright {
+		color: white;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
