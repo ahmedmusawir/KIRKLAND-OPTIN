@@ -1,174 +1,501 @@
-$kirkland-primary: #faa720; //Golden Rod
-$kirkland-secondary: #4d4d4d; //Dark Slate Gray
-$kirkland-third: #289c95; //Light Sea Green
+$customer-primary: #faa720; //Golden Rod
+$customer-secondary: #388ce3; //Royal Blue
+$customer-third: #289c95; //Light Sea Green
 
 @import "bourbon/bourbon";
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css);
-// @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300,200,100);
-@import url('https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700');
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,300,200,100);
 
 html { 
  
 	// display: none;
+
 }
 
 body {
 
-	h1 {
-		font-family: "Oswald", sans-serif;
-	}
-	h2,h3,h4,h5 {
+	// display: none;
+	// color: red;
+	h1,h2,h3,h4 {
 		font-family: "Raleway", sans-serif;
 	}
 }
 
-#HEADER-LOGO {
+#LOGO {
 	img {
-		padding-top: 1rem;
-		padding-bottom: 1rem;
-	}
-	.orange-bar {
-		min-height: 1.5rem;
-		background: $kirkland-primary;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
 	}
 }
 
+
 #BLOCK1 {
-	min-height: 650px;
-	background: $kirkland-secondary;
-	color: $snow;
 
-	.left-pane {
-		h1 {
-			padding-top: 3rem;
-			padding-bottom: 1rem;
-		}
-		h4 {
-			font-weight: 500;
-			line-height: 2.5rem;
-			padding-bottom: 2rem;
-		}
-		ul {
-			padding-bottom: 5rem;
-			margin-bottom: 8rem;
-			list-style: none;
+	background: $customer-primary;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 
-			li {
-				font-size: 1.8rem;
-				font-weight: 300;
-				margin-bottom: 2rem;
-
-				i {
-					font-size: 2.5rem;
-					color: darken($kirkland-primary, 0%)
-				}
-			}
-		}
-
-		@media (min-width: 700px) {
-			h1 {
-				padding-top: 5rem;
-				padding-bottom: 2rem;
-				font-size: 4.5rem;
-			}
-			h4 {
-				font-size: 2.8rem;
-				font-weight: 400;
-				line-height: 3.5rem;
-				padding-bottom: 3rem;
-			}
-			ul {
-				padding-bottom: 5rem;
-				padding: 0 !important;
-				list-style: none;
-
-				li {
-					font-size: 2rem;
-					font-weight: 300;
-					margin-bottom: 2rem;
-
-					i {
-						font-size: 2.5rem;
-						color: darken($kirkland-primary, 0%)
-					}
-				}
-			}		
-		}		
+	h1 {
+		font-size: 5rem;
+		color: white;
 	}
+	h5 {
+		font-size: 2rem;
+		font-variant: 700;
+		color: $gray-lighter;
+	} 
 
-	.right-pane {
-		background: darken($kirkland-secondary, 10%);
-		// min-height: 650px;
-		padding: 0;
-		margin: 0;
+}
 
-		img {
-			margin-top: -50px;
-		}
-		
-		.the-form {
-			button {
-				font-size: 2rem;
-				font-weight: 500;
-				width: 90%;
-				padding: 2rem;
-				margin-left: 1rem;
-				margin-right: 1rem;
 
-				@media (max-width: 413px) {
-					font-size: 1.5rem;
-				}
-			}
-			input {
-				width: 90%;
-				margin: 0 auto;
-				border-radius: 5px;
-				padding: 2rem;
-			}			
-		}
-
-		.secure-text {
-			padding-top: 2rem;
-			padding-bottom: 2rem;
-			color: lighten($gray-light, 10%);
-		}
-	}
+.arrow-block {
+	
+	.arrow-down {
+	  margin: 0 auto;		
+	  width: 0; 
+	  height: 0; 
+	  border-left: 40px solid transparent;
+	  border-right: 40px solid transparent;
+	  
+	  border-top: 40px solid $customer-primary;
+	}	
 }
 
 #BLOCK2 {
 
+	padding-bottom: 5rem;
+
 	h1 {
-		font-size: 4rem;
-		font-weight: 300;
+		font-size: 2.5rem;
+		color: $gray;
+		padding-bottom: 3rem;
+		font-weight: 700;
+
+		@media (min-width: 700px) {
+			font-size: 4.3rem;
+			font-weight: 400;
+		}
+	}
+	p {
+		font-size: 2rem;
+		color: darken( $gray-light, 0% );
+		font-variant: 300;
+	}
+
+	img {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 100%;
+		display: block;
+		height: auto;
+		vertical-align: middle;
+		// border: 1rem solid red;
+	}		
+}
+
+/**
+ *
+ * Blue Background Block 
+ *
+ */
+
+#BLOCK3 {
+
+	background-size: cover;
+    background-position: center center;
+    background-image: url(https://optassets.ontraport.com/opt_assets/blocks/common/stockPhoto/blocks/block31bg/bg-fauceted-blue2.png);	
+
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	@media (min-width: 1000px) {
+		padding-top: 1rem;
+	}
+	h1 {
+		font-size: 5rem;
+		color: white;
 		padding-top: 3rem;
 		padding-bottom: 2rem;
-		border-bottom: 2px solid $kirkland-secondary;
-		text-align: center;
-	}
-	img {
-		margin-right: 5rem;
-		margin-bottom: 3rem;
-
-		@media (max-width: 500px ) {
-			width: 100%;
-		}
-
-	}
-	.text-content {
-
-		h3 {
-			font-weight: 700;
-			font-size: 2.5rem;
-		}
-		p {
-			font-size: 2.2rem;
-			font-weight: 400;
-			line-height: 3rem;
-			color: gray;
+		
+		@media (max-width: 400px) {
+			font-size: 3.5rem;
 		}		
 	}
-	
+	h5 {
+		font-size: 2rem;
+		font-weight: 300;
+		color: $snow;
+		padding-bottom: 2rem;
+
+	}
+
+	img {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 100%;
+		display: block;
+		height: auto;
+		vertical-align: middle;
+		@media (min-width: 1000px) {
+			padding-top: 6rem;
+		}
+	} 	
+}
+
+
+#BLOCK4 {
+
+	margin-bottom: 5rem;
+
+	.row {
+		margin-top: 5rem;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		color: $gray;
+		padding: 2rem;
+		padding-bottom: 3rem;
+		font-weight: 700;
+
+		@media (min-width: 700px) {
+			font-size: 4.3rem;
+			font-weight: 400;
+		}
+	}
+	h3 {
+		font-weight: 700;
+		padding-bottom: 2rem;
+	}
+	p {
+		padding: 2rem;
+		font-size: 2rem;
+		color: darken( $gray-light, 0% );
+		font-variant: 300;
+	}
+	ul {
+		padding-top: 2rem;
+
+		li {
+			font-size: 2rem;
+			color: $gray-light;
+		}
+	}	
+}
+
+/**
+ *
+ * Green Background Block 
+ *
+ */
+
+#BLOCK5 {
+
+	background-size: cover;
+    background-position: center center;
+    background: $customer-third;
+
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	@media (min-width: 1000px) {
+		padding-top: 1rem;
+	}
+	h1 {
+		font-size: 5rem;
+		color: white;
+		padding-top: 3rem;
+		padding-bottom: 2rem;
+
+		@media (max-width: 400px) {
+			font-size: 3.5rem;
+		}
+	}
+	h5 {
+		font-size: 2rem;
+		font-weight: 300;
+		color: $snow;
+		padding-bottom: 2rem;
+
+	}
+
+	img {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 100%;
+		display: block;
+		height: auto;
+		vertical-align: middle;
+		@media (min-width: 1000px) {
+			padding-top: 6rem;
+		}
+	} 	
+}
+
+/**
+ *
+ * PRICE BLOCK
+ *
+ */
+#BLOCK6 {
+
+	header {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+
+
+		h1,h4 {
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+	}
+
+	.flex-container {
+
+		// @include align-items(stretch);
+
+
+		@media (min-width: 1100px) {
+
+		  	@include display(flex);
+
+		  	@include flex-direction(row);
+
+		  	@include justify-content(center);			
+		}
+
+	  	.pricebox {
+
+			@media (min-width: 1100px) {
+			  	width: 33%;	  		
+
+			}
+
+			.content {
+	  			padding: 3rem;
+				// background: #fff5c8;
+
+		  		box-shadow: 3px 3px 18px lighten($gray-light, 20%);
+
+		  		h3 {
+		  			color: $customer-third;
+		  			font-weight: 700;
+		  			font-size: 3rem;
+
+					@media (max-width: 1100px) {
+						font-size: 3rem;
+		  			}
+		  		}
+		  		p {
+		  			min-height: 150px;
+		  			padding-top: 3rem;
+					
+					@media (max-width: 1100px) {
+						font-size: 2rem;
+						color: gray;
+					}
+
+		  		}
+		  		.btn {
+		  			margin-top: 3rem;
+		  		}				
+			}
+			.middlebox {
+	  			border: 1rem solid $customer-primary;
+	  			height: 500px;
+	  		}	
+	  		.sidebox {
+	  			margin-top: 2rem;
+	  			margin-bottom: 2rem;
+	  		}				
+	  	}
+	}
+  	.block6-footer {
+  		margin-top: 5rem;
+  		img {
+  			width: 30%;
+  		}
+  		p {
+  			margin-top: 2rem;
+  			margin-bottom: 2rem;
+  		}
+  	}	
+}
+
+/**
+ *
+ * Blue Background Block 
+ *
+ */
+
+#BLOCK7 {
+
+	background-size: cover;
+    background-position: center center;
+    background-image: url(https://optassets.ontraport.com/opt_assets/blocks/common/stockPhoto/blocks/block31bg/bg-fauceted-blue2.png);	
+
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+
+	@media (min-width: 1000px) {
+		padding-top: 1rem;
+	}
+
+	h1 {
+		font-size: 3rem;
+		color: white;
+		padding-top: 3rem;
+		padding-bottom: 2rem;
+	}
+	.btn {
+		padding: 1rem 5rem;
+		border-radius: 50px;
+	}
+}
+
+/**
+ *
+ * ALL PLANS INCLUDE BLOCK
+ *
+ */
+
+#BLOCK8 {
+
+	h1 {
+		padding-top: 5rem;
+	}
+
+	.row {
+		// margin-top: 5rem;
+	}
+
+	img {
+		padding-right: 4rem;
+	}
+
+
+	hr {
+		margin-top: 5rem;
+		margin-bottom: 5rem;
+	    height: 12px;
+	    border: 0;
+	    box-shadow: inset 0 8px 8px -8px rgba(0, 0, 0, 0.5);
+	}
+}
+
+
+/**
+ *
+ * FEATURES TABLE
+ *
+ */
+#BLOCK9 {
+
+	background: $customer-third;
+	color: white;
+
+	h1 {
+		text-align: center;	
+		padding-top: 5rem;
+		padding-bottom: 5rem;	
+		color: white;
+	}
+	h2, h3, h4, h5 {
+		color: white;
+	}
+	.modal-text {
+		color: gray;
+	}
+
+	table {
+		margin-bottom: 5rem;
+
+		thead {
+			th.top-left {
+				border-top: 1px solid $customer-third;
+				border-left: 1px solid $customer-third;
+			}
+			th.special {
+				border-top: 2rem solid $customer-primary;
+			}
+		}
+		td {
+			font-size: 2rem;
+			font-weight: 600;
+		}
+		a {
+			color: white;
+		}
+	}
+}
+
+/**
+ *
+ * ALL PLANS INCLUDE BLOCK
+ *
+ */
+
+#BLOCK10 {
+
+	background: url(https://unbounce-wpengine.netdna-ssl.com/photos/unlimited_support_bg.jpg);
+	background-size: cover;
+
+	padding-top: 5rem;
+	padding-bottom: 8rem;
+
+	h1 {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+	h3 {
+		font-size: 2rem;
+		font-weight: 600;
+		min-height: 50px;
+	}
+	p {
+		font-size: 1.7rem;
+		font-weight: 300;
+	}
+
+	img {
+		padding-right: 4rem;
+	}
+
+	.right-content {
+		padding-bottom: 2rem;
+	}
+}
+
+/**
+ *
+ * FAQ BLOCK
+ *
+ */
+#BLOCK {
+	margin-top: 5rem;
+
+	h1 {
+		border-bottom: 3px solid gray;
+		padding-bottom: 2rem;
+		color: gray;
+		font-size: 5rem;
+		text-align: center;
+	}
+
+	h2 {
+		font-family: "Raleway", sans-serif;
+		font-weight: 400;
+		color: gray;
+	}
+	p {
+		font-size: 2rem;
+		color: darken(gray, 10%);
+
+		@media (max-width: 600px) {
+		}
+	}
+
 }
 
 #SITE-FOOTER {

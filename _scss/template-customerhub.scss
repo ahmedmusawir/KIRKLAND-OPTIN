@@ -4,6 +4,8 @@ Theme URI: http://www.htmlfivedev.com
 
 */
 
+// @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css);
+
 // Import custom Bootstrap variables
 @import "bootstrap-variables";
 
@@ -11,7 +13,7 @@ Theme URI: http://www.htmlfivedev.com
 @import "bootstrap-sass/assets/stylesheets/bootstrap";
 
 // Custom Css
-@import "custom-kirkland";
+@import "custom";
 
 
 /**
